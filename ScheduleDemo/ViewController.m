@@ -31,37 +31,37 @@
 }
 
 - (void)initUI {
-    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, WINDOW_WIDTH, WINDOW_WIDTH)];
-    [self.view addSubview:self.contentView];
+//    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, WINDOW_WIDTH, WINDOW_WIDTH)];
+//    [self.view addSubview:self.contentView];
+//    
+//    CGFloat hWidth =WINDOW_WIDTH/DAY_TIME;
+//    CGFloat vHeight = hWidth*0.8;
+//    CGFloat vCount = 0;
+//    for (int i = 0; i <= DAY_TIME; i++) {
+//        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(i*hWidth, 0, 1, vHeight*7)];
+//        view.backgroundColor = [UIColor grayColor];
+//        [self.contentView addSubview:view];
+//        if (i != DAY_TIME) {
+//            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(i*hWidth, 0, hWidth, vHeight)];
+//            label.text = [NSString stringWithFormat:@"%d", i+1];
+//            label.font = [UIFont systemFontOfSize:10];
+//            label.textColor = [UIColor blackColor];
+//            label.textAlignment = NSTextAlignmentCenter;
+//            [self.contentView addSubview:label];
+//        }
+//    }
+//    
+//    for (int j = 0; j <= WEEKDAY; j++) {
+//        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, j*vHeight, WINDOW_WIDTH, 1)];
+//        view.backgroundColor = [UIColor grayColor];
+//        [self.contentView addSubview:view];
+//    }
+//    
+//    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
+//    [self.contentView addGestureRecognizer:panGesture];
+//    panGesture.delegate = self;
     
-    CGFloat hWidth =WINDOW_WIDTH/DAY_TIME;
-    CGFloat vHeight = hWidth*0.8;
-    CGFloat vCount = 0;
-    for (int i = 0; i <= DAY_TIME; i++) {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(i*hWidth, 0, 1, vHeight*7)];
-        view.backgroundColor = [UIColor grayColor];
-        [self.contentView addSubview:view];
-        if (i != DAY_TIME) {
-            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(i*hWidth, 0, hWidth, vHeight)];
-            label.text = [NSString stringWithFormat:@"%d", i+1];
-            label.font = [UIFont systemFontOfSize:10];
-            label.textColor = [UIColor blackColor];
-            label.textAlignment = NSTextAlignmentCenter;
-            [self.contentView addSubview:label];
-        }
-    }
-    
-    for (int j = 0; j <= WEEKDAY; j++) {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, j*vHeight, WINDOW_WIDTH, 1)];
-        view.backgroundColor = [UIColor grayColor];
-        [self.contentView addSubview:view];
-    }
-    
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGesture:)];
-    [self.contentView addGestureRecognizer:panGesture];
-    panGesture.delegate = self;
-    
-    self.scheduleView = [[ScheduleView alloc] initWithFrame:CGRectMake(0, 300, WINDOW_WIDTH, WINDOW_WIDTH/24*7*0.8)];
+    self.scheduleView = [[ScheduleView alloc] initWithFrame:CGRectMake(0, 100, WINDOW_WIDTH, WINDOW_WIDTH/24*7*0.8)];
     [self.view addSubview:self.scheduleView];
 }
 

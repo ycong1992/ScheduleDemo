@@ -48,16 +48,17 @@
     UIFont *textFont = [UIFont systemFontOfSize:10];
     NSMutableParagraphStyle *textStyle = [[NSMutableParagraphStyle alloc] init];
     textStyle.alignment = NSTextAlignmentCenter;//水平居中
-    NSString *numText;
-    
+    NSDictionary *attributesDic = @{NSFontAttributeName:textFont,
+                                    NSForegroundColorAttributeName:textColor,
+                                    NSParagraphStyleAttributeName:textStyle};
+    NSString *numText = @"1";
+    CGSize textSize = [numText sizeWithAttributes:attributesDic];
     for (int k = 0; k < WEEKDAY*DAY_TIME; k++) {
         numText = [NSString stringWithFormat:@"%d", k%DAY_TIME+1];
         CGFloat textX = k%DAY_TIME*hWidth;
-        CGFloat textY = k/DAY_TIME*vHeight;
+        CGFloat textY = k/DAY_TIME*vHeight+(vHeight-textSize.height)/2;
         [numText drawInRect:CGRectMake(textX, textY, hWidth, vHeight)
-             withAttributes:@{NSFontAttributeName:textFont,
-                              NSForegroundColorAttributeName:textColor,
-                              NSParagraphStyleAttributeName:textStyle}];
+             withAttributes:attributesDic];
     }
 
 }
