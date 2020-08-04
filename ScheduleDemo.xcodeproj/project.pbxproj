@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B178FE24D9571A00EAD6C1 /* ScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B178FD24D9571A00EAD6C1 /* ScheduleView.m */; };
 		7E61D5EE24D850E000640001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E61D5ED24D850E000640001 /* AppDelegate.m */; };
 		7E61D5F124D850E000640001 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E61D5F024D850E000640001 /* SceneDelegate.m */; };
 		7E61D5F424D850E000640001 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E61D5F324D850E000640001 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06B178FC24D9571A00EAD6C1 /* ScheduleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleView.h; sourceTree = "<group>"; };
+		06B178FD24D9571A00EAD6C1 /* ScheduleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleView.m; sourceTree = "<group>"; };
 		7E61D5E924D850E000640001 /* ScheduleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScheduleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E61D5EC24D850E000640001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E61D5ED24D850E000640001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				7E61D5F024D850E000640001 /* SceneDelegate.m */,
 				7E61D5F224D850E000640001 /* ViewController.h */,
 				7E61D5F324D850E000640001 /* ViewController.m */,
+				06B178FC24D9571A00EAD6C1 /* ScheduleView.h */,
+				06B178FD24D9571A00EAD6C1 /* ScheduleView.m */,
 				7E61D5F524D850E000640001 /* Main.storyboard */,
 				7E61D5F824D850E300640001 /* Assets.xcassets */,
 				7E61D5FA24D850E300640001 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 				7E61D5F424D850E000640001 /* ViewController.m in Sources */,
 				7E61D5EE24D850E000640001 /* AppDelegate.m in Sources */,
 				7E61D5FF24D850E300640001 /* main.m in Sources */,
+				06B178FE24D9571A00EAD6C1 /* ScheduleView.m in Sources */,
 				7E61D5F124D850E000640001 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
