@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ScheduleView : UIView
 
+- (void)resetSelect;
+
 @end
 
 NS_ASSUME_NONNULL_END
